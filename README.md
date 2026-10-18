@@ -89,3 +89,20 @@ The runtime's gold_cave_coherence_probe.lua covers four Mt. Mortar floors
 and Mt. Moon with both cameras and companion OFF/ON. Its
  gold_cave_traversal_probe.lua walks through native upward/downward ladder
 warps. See ../voxel-runtime/docs/cave-interiors.md for tests and boundaries.
+
+## Native cave rock silhouettes, 1.0.7
+
+Removes the companion's vertical wall extensions above native cave rocks and
+its synthetic full-height boundary faces in Gen 2 caves. The authored voxel
+rocks retain their original shape; the overhead rock ceiling, ladder openings,
+stalactites and particle options remain. Removed extensions no longer add
+invisible obstacles to the third-person camera. Building walls and Gen 1
+interiors retain their existing behavior. No voxel profile is changed.
+
+1.0.7 verification: Gold before/after captures cover UNION_CAVE_1F,
+DARK_CAVE_VIOLET_ENTRANCE and ICE_PATH_1F in both cameras. Native cave geometry,
+roof openings and removed camera obstacles pass unit checks. The authored
+geometry driver passed the house, lab, exterior and forest comparisons,
+including byte-identical angled views. The driver now freezes native World.step
+as well as update so an NPC turning cannot invalidate a matched comparison.
+Physical Android was not tested.
