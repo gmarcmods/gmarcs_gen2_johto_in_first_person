@@ -67,3 +67,10 @@ Ilex Forest at angled, first-person and third-person cameras. It checks
 pixel equality in angled mode. A separate geometry test verifies that an
 authored cabinet using the wall primitive receives no added vertical faces.
 Restart after importing the updated ZIP to replace the old runtime hooks.
+
+## Horizon, 1.0.3
+
+The distant backdrop uses only building-free mountain artwork on the northern
+half of the compass. The south shows open sea and sky, with no painted cities
+or mountains. Old HORIZON ART city settings are ignored; HORIZON still toggles
+the backdrop. Native map buildings and authored voxel geometry remain intact.
