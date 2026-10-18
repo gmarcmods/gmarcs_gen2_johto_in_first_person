@@ -1,4 +1,4 @@
-# Johto in First Person 1.0.0
+# Johto in First Person 1.0.1
 
 A companion for modern gen1recomp, installed alongside **NEW_MOD_EX**.
 Adds interiors with ceilings, textured cave roofs and rock, forest canopy,
@@ -49,3 +49,21 @@ Original presentation code/assets: mrmushrooms11's Kanto in First Person,
 upstream commit `94d0151` (original version 1.57.2). Modern runtime integration,
 native Gen 2 adapter and quality controls are maintained in this workspace.
 See the shared project's README and `docs/architecture.md` for development.
+
+## Preserve the authored world (1.0.1)
+
+Effects run only in 1ST/3RD. The angled voxel views are unchanged. Furniture
+that uses a wall primitive is never extended into a room wall. The companion
+keeps an overhead room enclosure but does not repaint doors, add posters or
+windows, extend interior objects, or generate replacement forest/tree/rock/
+grass geometry. Those surfaces belong to NEW_MOD_EX's authored models.
+Unsafe legacy geometry controls are omitted from Johto's menu, including
+previously saved enabled values. The renderer's Ilex canopy classification is
+also left unchanged. Sky, weather, wildlife, sound and camera options remain.
+
+The regression probe `mods/shared/first-person-effects/tests/authored_geometry.lua`
+captures matched on/off views of the initial house, Elm's lab, New Bark and
+Ilex Forest at angled, first-person and third-person cameras. It checks
+pixel equality in angled mode. A separate geometry test verifies that an
+authored cabinet using the wall primitive receives no added vertical faces.
+Restart after importing the updated ZIP to replace the old runtime hooks.
