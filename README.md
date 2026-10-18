@@ -106,3 +106,14 @@ geometry driver passed the house, lab, exterior and forest comparisons,
 including byte-identical angled views. The driver now freezes native World.step
 as well as update so an NPC turning cannot invalidate a matched comparison.
 Physical Android was not tested.
+
+## Cave readability, 1.0.8
+
+Install with NEW_MOD_EX **0.1.43**. The voxel runtime also had an independent
+rock-cap layer; that layer is now removed, and native walkable water banks
+stay low; native directional cave edges also stay short instead of becoming
+full-height walls. JIFP uses a darker overhead surface and omits the legacy lumpy cave
+roof pass, keeping its optional native stalactites. Strength boulders and
+smashable rocks have distinct silhouettes in the voxel runtime. Cave collision
+and the authored assets are unchanged. Real Surf exits, ladders and matched
+first/third-person cave views were checked on desktop Gold.
