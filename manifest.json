@@ -1,0 +1,25 @@
+{
+  "id": "JOHTO_FIRST_PERSON",
+  "name": "Johto in First Person",
+  "version": "1.0.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "games": [
+    "gen2"
+  ],
+  "game_version": "0.0.0-dev || >=0.1.37 <2.0.0",
+  "category": "GRAPHICS",
+  "priority": 200,
+  "permissions": [
+    "engine_internals"
+  ],
+  "dependencies": [],
+  "optional_dependencies": [
+    "NEW_MOD_EX",
+    "GEN2_VOXEL"
+  ],
+  "conflicts": [],
+  "affects_link": false,
+  "description": "First-person interiors, caves, sky and atmosphere using the active voxel renderer and native gen2 graphics. Runtime integration; no file patching."
+}
