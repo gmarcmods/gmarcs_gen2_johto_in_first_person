@@ -74,3 +74,18 @@ The distant backdrop uses only building-free mountain artwork on the northern
 half of the compass. The south shows open sea and sky, with no painted cities
 or mountains. Old HORIZON ART city settings are ignored; HORIZON still toggles
 the backdrop. Native map buildings and authored voxel geometry remain intact.
+
+## Cave enclosure, 1.0.6
+
+Install with NEW_MOD_EX 0.1.36 for the mountain-cave repairs. JIFP keeps its
+optional roof/upper walls/effects; the voxel mod owns native rock surfaces
+and native ladder models. Passable landings stay clear, upward ladders have
+roof openings, and upper wall extensions align with the base rock faces.
+Third-person camera clearance includes the added enclosure and respects
+NONE/OFF and the cutaway; disabling/detaching removes that contribution.
+No authored asset or native map collision is rewritten.
+
+The runtime's gold_cave_coherence_probe.lua covers four Mt. Mortar floors
+and Mt. Moon with both cameras and companion OFF/ON. Its
+ gold_cave_traversal_probe.lua walks through native upward/downward ladder
+warps. See ../voxel-runtime/docs/cave-interiors.md for tests and boundaries.
