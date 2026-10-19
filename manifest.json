@@ -1,6 +1,6 @@
 {
-  "id": "JOHTO_FIRST_PERSON",
-  "name": "Johto in First Person",
+  "id": "gmarcs_gen2_johto_in_first_person",
+  "name": "gmarcs_gen2_johto_in_first_person",
   "version": "1.0.8",
   "api": 2,
   "entry": "main.lua",
@@ -16,10 +16,10 @@
   ],
   "dependencies": [],
   "optional_dependencies": [
-    "NEW_MOD_EX",
-    "GEN2_VOXEL"
+    "gmarcs_gen2_voxel_mod"
   ],
   "conflicts": [],
   "affects_link": false,
-  "description": "First-person interiors, caves, sky and atmosphere using the active voxel renderer and native gen2 graphics. Runtime integration; no file patching."
+  "description": "First-person interiors, caves, sky and atmosphere using the active voxel renderer and native gen2 graphics. Runtime integration; no file patching.",
+  "github": "gmarcmods/gmarcs_gen2_johto_in_first_person"
 }

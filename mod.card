@@ -1,0 +1,14 @@
+return {
+  summary   = "First-person companion for Gen 2 using the active voxel renderer.",
+  author    = "gmarcs",
+  tags      = { "first-person", "3d", "graphics", "companion" },
+  differences = {
+    changed = { "camera: third-person to first-person" },
+    added   = { "first-person interiors, caves, sky, weather, ambient sound" },
+    known   = { "requires gmarcs_gen2_voxel_mod for full effect" },
+  },
+  credits   = {
+    { who = "gmarcs_gen2_voxel_mod", for_ = "voxel renderer and shared presentation modules" },
+  },
+  compat    = { engine = ">=1.0.0 <2.0.0", modApi = 2 },
+}
