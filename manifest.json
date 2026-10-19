@@ -1,7 +1,7 @@
 {
   "id": "gmarcs_gen2_johto_in_first_person",
   "name": "gmarcs_gen2_johto_in_first_person",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -14,10 +14,10 @@
   "permissions": [
     "engine_internals"
   ],
-  "dependencies": [],
-  "optional_dependencies": [
+  "dependencies": [
     "gmarcs_gen2_voxel_mod"
   ],
+  "optional_dependencies": [],
   "conflicts": [],
   "affects_link": false,
   "description": "First-person interiors, caves, sky and atmosphere using the active voxel renderer and native gen2 graphics. Runtime integration; no file patching.",
