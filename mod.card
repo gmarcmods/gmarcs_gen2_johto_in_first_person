@@ -9,6 +9,7 @@ return {
   },
   credits   = {
     { who = "gmarcs_gen2_voxel_mod", for_ = "voxel renderer and shared presentation modules" },
+    { who = "mrmushrooms11", for_ = "Kanto in First Person (unmaintained) inspiration" },
   },
   compat    = { engine = ">=1.0.0 <2.0.0", modApi = 2 },
 }
