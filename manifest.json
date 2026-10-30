@@ -1,7 +1,7 @@
 {
   "id": "gmarcs_gen2_johto_in_first_person",
-  "name": "gmarcs Gen 2 Johto in First Person",
-  "version": "1.0.11",
+  "name": "Gmarc's Gen 2 Johto in First Person",
+  "version": "1.0.12",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",

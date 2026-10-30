@@ -1,4 +1,4 @@
-# gmarcs Gen 2 Johto in First Person
+# Gmarc's Gen 2 Johto in First Person
 
 First-person companion for gmarcs_gen2_voxel_mod.
 
