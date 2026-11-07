@@ -58,6 +58,11 @@ jobs:
       - name: Verify Johto release library snapshot
         run: python3 tools/sync_release_lib.py --check
 
+      - name: Install validation runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y luajit
+
       - name: Determine version
         id: ver
         env:
